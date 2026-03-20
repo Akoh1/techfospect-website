@@ -1,0 +1,13 @@
+# netlify.toml
+# Tells Netlify where to find your static files and serverless functions.
+
+[build]
+  publish   = "."                  # Serve files from the root folder
+  functions = "netlify/functions"  # Where serverless functions live
+
+# Redirect bare domain to www (optional but good practice)
+[[redirects]]
+  from   = "https://techfospect.com/*"
+  to     = "https://www.techfospect.com/:splat"
+  status = 301
+  force  = true
