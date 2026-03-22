@@ -1,9 +1,10 @@
-const https = require('https');
+// netlify/functions/submit-waitlist.js
+
+const https = require("https");
 
 exports.handler = async function (event) {
-
-  if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: 'Method Not Allowed' };
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
   }
 
   let email;
@@ -13,65 +14,71 @@ exports.handler = async function (event) {
   } catch {
     return {
       statusCode: 400,
-      body: JSON.stringify({ success: false, message: 'Invalid request body' })
+      body: JSON.stringify({ success: false, message: "Invalid request body" }),
     };
   }
 
   if (!email) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ success: false, message: 'Email is required' })
+      body: JSON.stringify({ success: false, message: "Email is required" }),
     };
   }
 
-  const accessKey = process.env.WEB3FORMS_KEY;
+  const formId = process.env.FORMSPREE_FORM_ID;
 
-  if (!accessKey) {
-    console.error('WEB3FORMS_KEY environment variable is not set');
+  if (!formId) {
+    console.error("FORMSPREE_FORM_ID environment variable is not set");
     return {
       statusCode: 500,
-      body: JSON.stringify({ success: false, message: 'Server configuration error' })
+      body: JSON.stringify({
+        success: false,
+        message: "Server configuration error",
+      }),
     };
   }
 
-  const payload = JSON.stringify({
-    access_key: accessKey,
-    subject: 'New Triim AI Hub Waitlist Signup',
-    email: email
-  });
+  const payload = JSON.stringify({ email });
 
-  // Use Node's built-in https module — no fetch, works on any Node version
   const result = await new Promise((resolve, reject) => {
     const options = {
-      hostname: 'api.web3forms.com',
-      path: '/submit',
-      method: 'POST',
+      hostname: "formspree.io",
+      path: `/f/${formId}`,
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(payload)
-      }
+        "Content-Type": "application/json",
+        Accept: "application/json", // tells Formspree to return JSON not HTML
+        "Content-Length": Buffer.byteLength(payload),
+      },
     };
 
     const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', chunk => { data += chunk; });
-      res.on('end', () => {
+      let data = "";
+      res.on("data", (chunk) => {
+        data += chunk;
+      });
+      res.on("end", () => {
         try {
           resolve({ ok: res.statusCode < 400, body: JSON.parse(data) });
         } catch {
-          reject(new Error(`Web3Forms returned non-JSON response: ${data.slice(0, 100)}`));
+          reject(
+            new Error(`Formspree returned non-JSON: ${data.slice(0, 100)}`),
+          );
         }
       });
     });
 
-    req.on('error', reject);
+    req.on("error", reject);
     req.write(payload);
     req.end();
   });
 
   return {
     statusCode: result.ok ? 200 : 400,
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(result.body)
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      success: result.ok,
+      message: result.ok ? "Successfully joined waitlist" : "Submission failed",
+    }),
   };
 };
