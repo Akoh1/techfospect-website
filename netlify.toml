@@ -7,10 +7,3 @@
 
 [functions]
   node_bundler = "esbuild"         # Use esbuild bundler (required for Node 18)
-
-# Redirect bare domain to www (optional but good practice)
-[[redirects]]
-  from   = "https://techfospect.com/*"
-  to     = "https://www.techfospect.com/:splat"
-  status = 301
-  force  = true
