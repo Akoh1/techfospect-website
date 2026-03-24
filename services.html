@@ -1,278 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services — Techfospect</title>
-  <meta name="description" content="Comprehensive AI services from development to consulting. Techfospect accelerates your digital transformation." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">Techfospect</a>
-      <div class="navbar__links">
-        <a href="index.html"    class="nav-link">Home</a>
-        <a href="about.html"    class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <div class="nav-dropdown">
-          <button class="nav-dropdown__trigger">Products<svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="nav-dropdown__menu">
-            <a href="products.html">All Products</a>
-            <a href="products/triim-ai-hub.html">Triim AI Hub</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services — Techfospect</title>
+    <meta
+      name="description"
+      content="Comprehensive AI services from development to consulting. Techfospect accelerates your digital transformation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">Techfospect</a>
+        <div class="navbar__links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown__trigger">
+              Products<svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="nav-dropdown__menu">
+              <a href="products.html">All Products</a>
+              <a href="products/triim-ai-hub.html">Triim AI Hub</a>
+            </div>
           </div>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            style="padding: 0.5rem 1.25rem; font-size: 0.9375rem"
+            >Get Started</a
+          >
         </div>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="contact.html" class="btn btn-primary" style="padding:0.5rem 1.25rem;font-size:0.9375rem;">Get Started</a>
+        <button class="navbar__hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <button class="navbar__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-    <div class="navbar__mobile">
-      <a href="index.html"    class="mobile-link">Home</a>
-      <a href="about.html"    class="mobile-link">About</a>
-      <a href="services.html" class="mobile-link">Services</a>
-      <button class="mobile-dropdown__toggle">Products<svg class="mobile-dropdown__chevron" style="width:16px;height:16px;transition:transform 0.2s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="mobile-dropdown__menu"><a href="products.html">All Products</a><a href="products/triim-ai-hub.html">Triim AI Hub</a></div>
-      <a href="contact.html"  class="mobile-link">Contact</a>
-      <a href="contact.html"  class="btn btn-primary mobile-cta">Get Started</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero--centered text-center">
-    <div class="container">
-      <h1>Our Services</h1>
-      <p>Expert AI solutions and consulting to accelerate your digital transformation and unlock new possibilities</p>
-    </div>
-  </section>
-
-  <!-- INTRO -->
-  <section class="section">
-    <div class="container text-center" style="max-width:52rem;margin:0 auto;">
-      <h2>Comprehensive AI Solutions for Every Need</h2>
-      <p style="font-size:1.0625rem;margin-top:1rem;line-height:1.8;">At Techfospect, we offer end-to-end AI services designed to help businesses of all sizes harness the power of artificial intelligence. Whether you're just starting your AI journey or looking to optimize existing systems, our team of experts is here to guide you every step of the way.</p>
-    </div>
-  </section>
-
-  <!-- SERVICES GRID -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="card-grid-3">
-
-        <!-- AI Development -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-          <h3>AI Development</h3>
-          <p>Custom AI solutions and machine learning models tailored to your specific business requirements.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Custom ML models</li><li>API integration</li><li>Full-stack AI apps</li><li>Model optimization</li>
-            </ul>
-          </div>
+      <div class="navbar__mobile">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <button class="mobile-dropdown__toggle">
+          Products<svg
+            class="mobile-dropdown__chevron"
+            style="width: 16px; height: 16px; transition: transform 0.2s"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="mobile-dropdown__menu">
+          <a href="products.html">All Products</a
+          ><a href="products/triim-ai-hub.html">Triim AI Hub</a>
         </div>
-
-        <!-- Data Analytics -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <h3>Data Analytics</h3>
-          <p>Transform raw data into actionable insights with AI-powered analytics and visualization tools.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Predictive analytics</li><li>Data visualization</li><li>Real-time dashboards</li><li>Business intelligence</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- AI Consulting -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
-          <h3>AI Consulting</h3>
-          <p>Strategic guidance on AI adoption, implementation, and best practices for your organization.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Strategy planning</li><li>Technology assessment</li><li>ROI analysis</li><li>Implementation roadmap</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Workflow Automation -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
-          <h3>Workflow Automation</h3>
-          <p>Automate repetitive tasks and optimize business processes with intelligent automation solutions.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Process automation</li><li>RPA integration</li><li>Workflow optimization</li><li>Efficiency analysis</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Data Engineering -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
-          <h3>Data Engineering</h3>
-          <p>Build robust data pipelines and infrastructure to support your AI and analytics initiatives.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Data pipelines</li><li>ETL processes</li><li>Data warehousing</li><li>Architecture design</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Cloud AI -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
-          <h3>Cloud AI Solutions</h3>
-          <p>Deploy and scale AI applications on cloud platforms with optimal performance and cost-efficiency.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Cloud deployment</li><li>Auto-scaling</li><li>Cost optimization</li><li>Multi-cloud support</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- AI Security -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>AI Security</h3>
-          <p>Ensure your AI systems are secure, compliant, and protected against emerging threats.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Security audits</li><li>Compliance checking</li><li>Threat detection</li><li>Data privacy</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Model Training -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></div>
-          <h3>Model Training</h3>
-          <p>Train, fine-tune, and optimize AI models for peak performance on your specific datasets.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Model fine-tuning</li><li>Transfer learning</li><li>Performance optimization</li><li>A/B testing</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Integration Services -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><circle cx="5" cy="19" r="3"/><circle cx="19" cy="19" r="3"/><line x1="12" y1="8" x2="5.5" y2="16"/><line x1="12" y1="8" x2="18.5" y2="16"/><line x1="7.5" y1="19" x2="16.5" y2="19"/></svg></div>
-          <h3>Integration Services</h3>
-          <p>Seamlessly integrate AI capabilities into your existing systems and workflows.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>API development</li><li>System integration</li><li>Legacy modernization</li><li>Middleware solutions</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Performance Optimization -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-          <h3>Performance Optimization</h3>
-          <p>Maximize the speed and efficiency of your AI applications and infrastructure.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Code optimization</li><li>Latency reduction</li><li>Resource management</li><li>Load balancing</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Training & Support -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <h3>Training &amp; Support</h3>
-          <p>Comprehensive training programs to help your team master AI tools and technologies.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>Team training</li><li>Workshops</li><li>Documentation</li><li>24/7 support</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Innovation Labs -->
-        <div class="card-features">
-          <div class="icon-box icon-box--gradient"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-          <h3>Innovation Labs</h3>
-          <p>Explore cutting-edge AI technologies and prototype innovative solutions with our experts.</p>
-          <div class="divider">
-            <ul class="dot-list">
-              <li>R&amp;D collaboration</li><li>Proof of concept</li><li>Innovation workshops</li><li>Technology pilots</li>
-            </ul>
-          </div>
-        </div>
-
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary mobile-cta"
+          >Get Started</a
+        >
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- PROCESS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2>Our Process</h2>
-        <p>A proven methodology to ensure successful AI implementation</p>
+    <!-- HERO -->
+    <section class="hero--centered text-center">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p>
+          Expert AI solutions and consulting to accelerate your digital
+          transformation and unlock new possibilities
+        </p>
       </div>
-      <div class="steps-grid">
-        <div class="step text-center"><div class="step__number">1</div><h3>Discovery</h3><p>Understand your goals, challenges, and opportunities</p></div>
-        <div class="step text-center"><div class="step__number">2</div><h3>Strategy</h3><p>Develop a tailored roadmap and solution architecture</p></div>
-        <div class="step text-center"><div class="step__number">3</div><h3>Implementation</h3><p>Build, test, and deploy your AI solution</p></div>
-        <div class="step text-center"><div class="step__number">4</div><h3>Optimization</h3><p>Monitor, refine, and scale for continued success</p></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- WHY US -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section-header text-center"><h2>Why Choose Techfospect</h2></div>
-      <div class="stats-grid">
-        <div class="stat-card"><div class="stat-value">10+</div><h3>Years Experience</h3><p>Deep expertise in AI and machine learning across industries</p></div>
-        <div class="stat-card"><div class="stat-value">100%</div><h3>Client Satisfaction</h3><p>Committed to delivering results that exceed expectations</p></div>
-        <div class="stat-card"><div class="stat-value">24/7</div><h3>Support</h3><p>Round-the-clock assistance to keep your systems running</p></div>
+    <!-- INTRO -->
+    <section class="section">
+      <div
+        class="container text-center"
+        style="max-width: 52rem; margin: 0 auto"
+      >
+        <h2>Comprehensive AI Solutions for Every Need</h2>
+        <p style="font-size: 1.0625rem; margin-top: 1rem; line-height: 1.8">
+          At Techfospect, we offer end-to-end AI services designed to help
+          businesses of all sizes harness the power of artificial intelligence.
+          Whether you're just starting your AI journey or looking to optimize
+          existing systems, our team of experts is here to guide you every step
+          of the way.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Ready to Work With Us?</h2>
-      <p>Let's discuss how our AI services can transform your business and drive innovation</p>
-      <div class="cta-btns">
-        <a href="contact.html"  class="btn btn-white" style="display:inline-flex;align-items:center;gap:0.5rem;">
-          Get Started
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <a href="products.html" class="btn btn-white-outline">Explore Products</a>
-      </div>
-    </div>
-  </section>
+    <!-- SERVICES GRID -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="card-grid-3">
+          <!-- AI Development -->
+          <div class="card-features">
+            <div class="icon-box icon-box--gradient">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>AI Development</h3>
+            <p>
+              Custom AI solutions and machine learning models tailored to your
+              specific business requirements.
+            </p>
+            <div class="divider">
+              <ul class="dot-list">
+                <li>Custom ML models</li>
+                <li>API integration</li>
+                <li>Full-stack AI apps</li>
+                <li>Model optimization</li>
+              </ul>
+            </div>
+          </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div><a href="index.html" class="footer__logo">Techfospect</a><p class="footer__tagline">Building the future of AI-powered tech solutions</p></div>
-      <div><h4 class="footer__heading">Quick Links</h4><nav class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav></div>
-      <div>
-        <h4 class="footer__heading">Connect With Us</h4>
-        <p class="footer__email"><a href="mailto:contact@techfospect.com">contact@techfospect.com</a></p>
-        <div class="footer-social">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9 9 0 0 1-2.85 1.09A4.52 4.52 0 0 0 11.5 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <!-- AI Consulting -->
+          <div class="card-features">
+            <div class="icon-box icon-box--gradient">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 18h6" />
+                <path d="M10 22h4" />
+                <path
+                  d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"
+                />
+              </svg>
+            </div>
+            <h3>AI Consulting</h3>
+            <p>
+              Strategic guidance on AI adoption, implementation, and best
+              practices for your organization.
+            </p>
+            <div class="divider">
+              <ul class="dot-list">
+                <li>Strategy planning</li>
+                <li>Technology assessment</li>
+                <li>ROI analysis</li>
+                <li>Implementation roadmap</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Model Training -->
+          <div class="card-features">
+            <div class="icon-box icon-box--gradient">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                <rect x="9" y="9" width="6" height="6" />
+                <line x1="9" y1="1" x2="9" y2="4" />
+                <line x1="15" y1="1" x2="15" y2="4" />
+                <line x1="9" y1="20" x2="9" y2="23" />
+                <line x1="15" y1="20" x2="15" y2="23" />
+                <line x1="20" y1="9" x2="23" y2="9" />
+                <line x1="20" y1="14" x2="23" y2="14" />
+                <line x1="1" y1="9" x2="4" y2="9" />
+                <line x1="1" y1="14" x2="4" y2="14" />
+              </svg>
+            </div>
+            <h3>Model Training</h3>
+            <p>
+              Train, fine-tune, and optimize AI models for peak performance on
+              your specific datasets.
+            </p>
+            <div class="divider">
+              <ul class="dot-list">
+                <li>Model fine-tuning</li>
+                <li>Transfer learning</li>
+                <li>Performance optimization</li>
+                <li>A/B testing</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Integration Services -->
+          <div class="card-features">
+            <div class="icon-box icon-box--gradient">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="5" r="3" />
+                <circle cx="5" cy="19" r="3" />
+                <circle cx="19" cy="19" r="3" />
+                <line x1="12" y1="8" x2="5.5" y2="16" />
+                <line x1="12" y1="8" x2="18.5" y2="16" />
+                <line x1="7.5" y1="19" x2="16.5" y2="19" />
+              </svg>
+            </div>
+            <h3>Integration Services</h3>
+            <p>
+              Seamlessly integrate AI capabilities into your existing systems
+              and workflows.
+            </p>
+            <div class="divider">
+              <ul class="dot-list">
+                <li>API development</li>
+                <li>System integration</li>
+                <li>Legacy modernization</li>
+                <li>Middleware solutions</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Training & Support -->
+          <div class="card-features">
+            <div class="icon-box icon-box--gradient">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Training &amp; Support</h3>
+            <p>
+              Comprehensive training programs to help your team master AI tools
+              and technologies.
+            </p>
+            <div class="divider">
+              <ul class="dot-list">
+                <li>Team training</li>
+                <li>Workshops</li>
+                <li>Documentation</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer__bottom"><p>&copy; <span id="year"></span> Techfospect. All rights reserved.</p></div>
-  </footer>
+    </section>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
-</body>
+    <!-- PROCESS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Our Process</h2>
+          <p>A proven methodology to ensure successful AI implementation</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step text-center">
+            <div class="step__number">1</div>
+            <h3>Discovery</h3>
+            <p>Understand your goals, challenges, and opportunities</p>
+          </div>
+          <div class="step text-center">
+            <div class="step__number">2</div>
+            <h3>Strategy</h3>
+            <p>Develop a tailored roadmap and solution architecture</p>
+          </div>
+          <div class="step text-center">
+            <div class="step__number">3</div>
+            <h3>Implementation</h3>
+            <p>Build, test, and deploy your AI solution</p>
+          </div>
+          <div class="step text-center">
+            <div class="step__number">4</div>
+            <h3>Optimization</h3>
+            <p>Monitor, refine, and scale for continued success</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Work With Us?</h2>
+        <p>
+          Let's discuss how our AI services can transform your business and
+          drive innovation
+        </p>
+        <div class="cta-btns">
+          <a
+            href="contact.html"
+            class="btn btn-white"
+            style="display: inline-flex; align-items: center; gap: 0.5rem"
+          >
+            Get Started
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="products.html" class="btn btn-white-outline"
+            >Explore Products</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a href="index.html" class="footer__logo">Techfospect</a>
+          <p class="footer__tagline">
+            Building the future of AI-powered tech solutions
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="index.html">Home</a><a href="about.html">About</a
+            ><a href="products.html">Products</a
+            ><a href="services.html">Services</a
+            ><a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect With Us</h4>
+          <p class="footer__email">
+            <a href="mailto:techfospect@gmail.com">techfospect@gmail.com</a>
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://x.com/techfospect"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9 9 0 0 1-2.85 1.09A4.52 4.52 0 0 0 11.5 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                /></svg
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/techfospect/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" /></svg
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Techfospect. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

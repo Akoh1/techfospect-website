@@ -1,289 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Techfospect — Building the Future of AI Ecosystems</title>
-  <meta name="description" content="Techfospect creates intelligent, connected platforms that empower businesses to harness the full potential of artificial intelligence." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techfospect — Building the Future of AI Ecosystems</title>
+    <meta
+      name="description"
+      content="Techfospect creates intelligent, connected platforms that empower businesses to harness the full potential of artificial intelligence."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">Techfospect</a>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">Techfospect</a>
+        <div class="navbar__links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
 
-      <div class="navbar__links">
-        <a href="index.html"    class="nav-link">Home</a>
-        <a href="about.html"    class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown__trigger">
+              Products
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="nav-dropdown__menu">
+              <a href="products.html">All Products</a>
+              <a href="products/triim-ai-hub.html">Triim AI Hub</a>
+            </div>
+          </div>
 
-        <div class="nav-dropdown">
-          <button class="nav-dropdown__trigger">
-            Products
-            <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="nav-dropdown__menu">
-            <a href="products.html">All Products</a>
-            <a href="products/triim-ai-hub.html">Triim AI Hub</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            style="padding: 0.5rem 1.25rem; font-size: 0.9375rem"
+            >Get Started</a
+          >
+        </div>
+
+        <button class="navbar__hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="navbar__mobile">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="services.html" class="mobile-link">Services</a>
+
+        <button class="mobile-dropdown__toggle">
+          Products
+          <svg
+            class="mobile-dropdown__chevron"
+            style="width: 16px; height: 16px; transition: transform 0.2s"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="mobile-dropdown__menu">
+          <a href="products.html">All Products</a>
+          <a href="products/triim-ai-hub.html">Triim AI Hub</a>
+        </div>
+
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary mobile-cta"
+          >Get Started</a
+        >
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__grid container">
+        <div class="hero__content">
+          <h1>Building the Future of AI Ecosystems</h1>
+          <p class="hero__sub">
+            Techfospect creates intelligent, connected platforms that empower
+            businesses to harness the full potential of artificial intelligence.
+          </p>
+          <div class="hero__cta">
+            <a href="products.html" class="btn btn-primary">
+              Explore Triim
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="about.html" class="btn btn-outline">Learn More</a>
           </div>
         </div>
 
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="contact.html" class="btn btn-primary" style="padding:0.5rem 1.25rem;font-size:0.9375rem;">Get Started</a>
-      </div>
-
-      <button class="navbar__hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <div class="navbar__mobile">
-      <a href="index.html"    class="mobile-link">Home</a>
-      <a href="about.html"    class="mobile-link">About</a>
-      <a href="services.html" class="mobile-link">Services</a>
-
-      <button class="mobile-dropdown__toggle">
-        Products
-        <svg class="mobile-dropdown__chevron" style="width:16px;height:16px;transition:transform 0.2s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-      <div class="mobile-dropdown__menu">
-        <a href="products.html">All Products</a>
-        <a href="products/triim-ai-hub.html">Triim AI Hub</a>
-      </div>
-
-      <a href="contact.html"  class="mobile-link">Contact</a>
-      <a href="contact.html"  class="btn btn-primary mobile-cta">Get Started</a>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero__grid container">
-      <div class="hero__content">
-        <h1>Building the Future of AI Ecosystems</h1>
-        <p class="hero__sub">Techfospect creates intelligent, connected platforms that empower businesses to harness the full potential of artificial intelligence.</p>
-        <div class="hero__cta">
-          <a href="products.html" class="btn btn-primary">
-            Explore Triim
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <a href="about.html" class="btn btn-outline">Learn More</a>
-        </div>
-      </div>
-
-      <div class="hero__image">
-        <!-- Replace src with ./images/hero-ai.jpg after running download-images.sh -->
-        <img
-          src="https://images.unsplash.com/photo-1764336312138-14a5368a6cd3?w=1080&q=80"
-          alt="AI Technology abstract blue visualization"
-          loading="eager"
-          onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>AI Technology Illustration</div>'"
-        />
-        <div class="hero__badge-float">Powered by AI</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ECOSYSTEM ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2>The Techfospect Ecosystem</h2>
-        <p>A comprehensive platform designed to revolutionize how businesses interact with AI technology</p>
-      </div>
-
-      <div class="card-grid-4">
-        <div class="card">
-          <div class="icon-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><circle cx="5" cy="19" r="3"/><circle cx="19" cy="19" r="3"/><line x1="12" y1="8" x2="5.5" y2="16"/><line x1="12" y1="8" x2="18.5" y2="16"/><line x1="7.5" y1="19" x2="16.5" y2="19"/></svg>
-          </div>
-          <h3>Connected Ecosystem</h3>
-          <p>An integrated platform where AI tools and services work seamlessly together.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          </div>
-          <h3>Cutting-Edge AI</h3>
-          <p>Powered by the latest advances in artificial intelligence and machine learning.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Secure &amp; Reliable</h3>
-          <p>Enterprise-grade security with reliable performance you can trust.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon-box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Built for Teams</h3>
-          <p>Collaborative tools designed for modern teams and workflows.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== INTRODUCING TRIIM ===== -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="card-grid-2" style="gap:4rem;">
-        <div>
-          <span class="badge badge--cyan" style="margin-bottom:1.5rem;display:inline-block;">Coming Soon</span>
-          <h2 style="margin-bottom:1rem;">Introducing Triim AI Hub</h2>
-          <p style="margin-bottom:1.5rem;font-size:1.0625rem;">Our flagship AI orchestration platform that brings multiple intelligent agents together in one unified workspace. Triim empowers teams to collaborate with AI like never before.</p>
-
-          <ul class="feature-list" style="margin-bottom:2rem;">
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Multi-agent AI orchestration
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Real-time collaboration tools
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Advanced analytics dashboard
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Seamless API integration
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Customizable workflows
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              Enterprise-grade security
-            </li>
-          </ul>
-
-          <a href="products/triim-ai-hub.html" class="btn btn-primary">
-            Join the Waitlist
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-
-        <div style="position:relative;">
-          <!-- Replace src with ./images/dashboard.jpg after running download-images.sh -->
+        <div class="hero__image">
+          <!-- Replace src with ./images/hero-ai.jpg after running download-images.sh -->
           <img
-            src="https://images.unsplash.com/photo-1659018966825-43297e655ccf?w=1080&q=80"
-            alt="Triim AI Hub Dashboard Interface"
-            style="width:100%;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,0.14);border:1px solid #e2e8f0;object-fit:cover;max-height:420px;"
-            onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Triim Dashboard Preview</div>'"
+            src="https://images.unsplash.com/photo-1764336312138-14a5368a6cd3?w=1080&q=80"
+            alt="AI Technology abstract blue visualization"
+            loading="eager"
+            onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>AI Technology Illustration</div>'"
           />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== SERVICES PREVIEW ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2>Our Services</h2>
-        <p>Expert AI solutions and consulting to accelerate your digital transformation</p>
-      </div>
+    <!-- ===== ECOSYSTEM ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>The Techfospect Ecosystem</h2>
+          <p>
+            A comprehensive platform designed to revolutionize how businesses
+            interact with AI technology
+          </p>
+        </div>
 
-      <div class="card-grid-3">
-        <div class="card">
-          <div class="icon-box icon-box--gradient">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <div class="card-grid-4">
+          <div class="card">
+            <div class="icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="5" r="3" />
+                <circle cx="5" cy="19" r="3" />
+                <circle cx="19" cy="19" r="3" />
+                <line x1="12" y1="8" x2="5.5" y2="16" />
+                <line x1="12" y1="8" x2="18.5" y2="16" />
+                <line x1="7.5" y1="19" x2="16.5" y2="19" />
+              </svg>
+            </div>
+            <h3>Connected Ecosystem</h3>
+            <p>
+              An integrated platform where AI tools and services work seamlessly
+              together.
+            </p>
           </div>
-          <h3>AI Development</h3>
-          <p>Custom AI solutions tailored to your specific business needs.</p>
-        </div>
 
-        <div class="card">
-          <div class="icon-box icon-box--gradient">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <div class="card">
+            <div class="icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <h3>Cutting-Edge AI</h3>
+            <p>
+              Powered by the latest advances in artificial intelligence and
+              machine learning.
+            </p>
           </div>
-          <h3>Data Analytics</h3>
-          <p>Transform your data into actionable insights with AI-powered analytics.</p>
-        </div>
 
-        <div class="card">
-          <div class="icon-box icon-box--gradient">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div class="card">
+            <div class="icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Secure &amp; Reliable</h3>
+            <p>
+              Enterprise-grade security with reliable performance you can trust.
+            </p>
           </div>
-          <h3>Consulting</h3>
-          <p>Expert guidance on AI strategy and implementation.</p>
+
+          <div class="card">
+            <div class="icon-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Built for Teams</h3>
+            <p>Collaborative tools designed for modern teams and workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTRODUCING TRIIM ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="card-grid-2" style="gap: 4rem">
+          <div>
+            <span
+              class="badge badge--cyan"
+              style="margin-bottom: 1.5rem; display: inline-block"
+              >Coming Soon</span
+            >
+            <h2 style="margin-bottom: 1rem">Introducing Triim AI Hub</h2>
+            <p style="margin-bottom: 1.5rem; font-size: 1.0625rem">
+              Our flagship AI orchestration platform that brings multiple
+              intelligent agents together in one unified workspace. Triim
+              empowers teams to collaborate with AI like never before.
+            </p>
+
+            <ul class="feature-list" style="margin-bottom: 2rem">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Multi-agent AI orchestration
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Real-time collaboration tools
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Advanced analytics dashboard
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Seamless API integration
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Customizable workflows
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                Enterprise-grade security
+              </li>
+            </ul>
+
+            <a href="products/triim-ai-hub.html" class="btn btn-primary">
+              Join the Waitlist
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+
+          <div style="position: relative">
+            <!-- Replace src with ./images/dashboard.jpg after running download-images.sh -->
+            <img
+              src="https://images.unsplash.com/photo-1659018966825-43297e655ccf?w=1080&q=80"
+              alt="Triim AI Hub Dashboard Interface"
+              style="
+                width: 100%;
+                border-radius: 16px;
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+                border: 1px solid #e2e8f0;
+                object-fit: cover;
+                max-height: 420px;
+              "
+              onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Triim Dashboard Preview</div>'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Transform Your Business with AI?</h2>
+        <p>
+          Join the future of intelligent technology. Get early access to Triim
+          AI Hub and explore our ecosystem.
+        </p>
+        <div class="cta-btns">
+          <a href="products/triim-ai-hub.html" class="btn btn-white"
+            >Get Early Access</a
+          >
+          <a href="contact.html" class="btn btn-white-outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a href="index.html" class="footer__logo">Techfospect</a>
+          <p class="footer__tagline">
+            Building the future of AI-powered tech solutions
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Connect With Us</h4>
+          <p class="footer__email">
+            <a href="mailto:techfospect@gmail.com">techfospect@gmail.com</a>
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://x.com/techfospect"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9 9 0 0 1-2.85 1.09A4.52 4.52 0 0 0 11.5 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/techfospect/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="text-center" style="margin-top:2.5rem;">
-        <a href="services.html" class="btn btn-ghost" style="display:inline-flex;align-items:center;gap:0.5rem;font-size:1rem;font-weight:600;color:var(--color-secondary);">
-          View All Services
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Techfospect. All rights reserved.</p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ===== CTA ===== -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Ready to Transform Your Business with AI?</h2>
-      <p>Join the future of intelligent technology. Get early access to Triim AI Hub and explore our ecosystem.</p>
-      <div class="cta-btns">
-        <a href="products/triim-ai-hub.html" class="btn btn-white">Get Early Access</a>
-        <a href="contact.html" class="btn btn-white-outline">Contact Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div>
-        <a href="index.html" class="footer__logo">Techfospect</a>
-        <p class="footer__tagline">Building the future of AI-powered tech solutions</p>
-      </div>
-
-      <div>
-        <h4 class="footer__heading">Quick Links</h4>
-        <nav class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-
-      <div>
-        <h4 class="footer__heading">Connect With Us</h4>
-        <p class="footer__email"><a href="mailto:contact@techfospect.com">contact@techfospect.com</a></p>
-        <div class="footer-social">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9 9 0 0 1-2.85 1.09A4.52 4.52 0 0 0 11.5 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <p>&copy; <span id="year"></span> Techfospect. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

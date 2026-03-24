@@ -1,151 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products — Techfospect</title>
-  <meta name="description" content="Explore Techfospect's innovative AI products including the Triim AI Hub." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — Techfospect</title>
+    <meta
+      name="description"
+      content="Explore Techfospect's innovative AI products including the Triim AI Hub."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">Techfospect</a>
+        <div class="navbar__links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown__trigger">
+              Products<svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="nav-dropdown__menu">
+              <a href="products.html">All Products</a>
+              <a href="products/triim-ai-hub.html">Triim AI Hub</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            style="padding: 0.5rem 1.25rem; font-size: 0.9375rem"
+            >Get Started</a
+          >
+        </div>
+        <button class="navbar__hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="navbar__mobile">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <button class="mobile-dropdown__toggle">
+          Products<svg
+            class="mobile-dropdown__chevron"
+            style="width: 16px; height: 16px; transition: transform 0.2s"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="mobile-dropdown__menu">
+          <a href="products.html">All Products</a
+          ><a href="products/triim-ai-hub.html">Triim AI Hub</a>
+        </div>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary mobile-cta"
+          >Get Started</a
+        >
+      </div>
+    </nav>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">Techfospect</a>
-      <div class="navbar__links">
-        <a href="index.html"    class="nav-link">Home</a>
-        <a href="about.html"    class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <div class="nav-dropdown">
-          <button class="nav-dropdown__trigger">Products<svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="nav-dropdown__menu">
-            <a href="products.html">All Products</a>
-            <a href="products/triim-ai-hub.html">Triim AI Hub</a>
+    <!-- HERO -->
+    <section class="hero--centered text-center">
+      <div class="container">
+        <h1>Our Products</h1>
+        <p>
+          Innovative AI solutions designed to transform how you work and create
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS LIST -->
+    <section class="section">
+      <div class="container">
+        <!-- Triim AI Hub -->
+        <div class="product-row">
+          <div class="product-info">
+            <span
+              class="badge badge--cyan"
+              style="margin-bottom: 1rem; display: inline-block"
+              >Coming Soon</span
+            >
+            <h2>Triim AI Hub</h2>
+            <p class="product-tagline">Multi-Agent AI Orchestration Platform</p>
+            <p>
+              The ultimate AI orchestration platform that brings multiple
+              intelligent agents together in one unified workspace. Transform
+              how your team works with AI.
+            </p>
+            <ul class="dot-list" style="margin-bottom: 2rem">
+              <li>Multi-agent AI orchestration</li>
+              <li>Real-time collaboration</li>
+              <li>Enterprise-grade security</li>
+            </ul>
+            <a href="products/triim-ai-hub.html" class="btn btn-primary">
+              Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+          <div class="product-visual">
+            <!-- Replace with ./images/dashboard.jpg after running download-images.sh -->
+            <img
+              src="https://images.unsplash.com/photo-1659018966825-43297e655ccf?w=1080&q=80"
+              alt="Triim AI Hub Dashboard"
+              onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Triim Dashboard</div>'"
+            />
+            <div class="overlay"></div>
           </div>
         </div>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="contact.html" class="btn btn-primary" style="padding:0.5rem 1.25rem;font-size:0.9375rem;">Get Started</a>
       </div>
-      <button class="navbar__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-    <div class="navbar__mobile">
-      <a href="index.html"    class="mobile-link">Home</a>
-      <a href="about.html"    class="mobile-link">About</a>
-      <a href="services.html" class="mobile-link">Services</a>
-      <button class="mobile-dropdown__toggle">Products<svg class="mobile-dropdown__chevron" style="width:16px;height:16px;transition:transform 0.2s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="mobile-dropdown__menu"><a href="products.html">All Products</a><a href="products/triim-ai-hub.html">Triim AI Hub</a></div>
-      <a href="contact.html"  class="mobile-link">Contact</a>
-      <a href="contact.html"  class="btn btn-primary mobile-cta">Get Started</a>
-    </div>
-  </nav>
+    </section>
 
-  <!-- HERO -->
-  <section class="hero--centered text-center">
-    <div class="container">
-      <h1>Our Products</h1>
-      <p>Innovative AI solutions designed to transform how you work and create</p>
-    </div>
-  </section>
-
-  <!-- PRODUCTS LIST -->
-  <section class="section">
-    <div class="container">
-
-      <!-- Triim AI Hub -->
-      <div class="product-row">
-        <div class="product-info">
-          <span class="badge badge--cyan" style="margin-bottom:1rem;display:inline-block;">Coming Soon</span>
-          <h2>Triim AI Hub</h2>
-          <p class="product-tagline">Multi-Agent AI Orchestration Platform</p>
-          <p>The ultimate AI orchestration platform that brings multiple intelligent agents together in one unified workspace. Transform how your team works with AI.</p>
-          <ul class="dot-list" style="margin-bottom:2rem;">
-            <li>Multi-agent AI orchestration</li>
-            <li>Real-time collaboration</li>
-            <li>Advanced analytics dashboard</li>
-            <li>Enterprise-grade security</li>
-          </ul>
-          <a href="products/triim-ai-hub.html" class="btn btn-primary">
-            Learn More
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-        <div class="product-visual">
-          <!-- Replace with ./images/dashboard.jpg after running download-images.sh -->
-          <img
-            src="https://images.unsplash.com/photo-1659018966825-43297e655ccf?w=1080&q=80"
-            alt="Triim AI Hub Dashboard"
-            onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Triim Dashboard</div>'"
-          />
-          <div class="overlay"></div>
+    <!-- CTA -->
+    <section class="section section--alt">
+      <div
+        class="container text-center"
+        style="max-width: 48rem; margin: 0 auto"
+      >
+        <h2>More Products Coming Soon</h2>
+        <p style="font-size: 1.0625rem; margin: 1rem 0 2rem">
+          We're constantly innovating and expanding our product ecosystem. Stay
+          tuned for exciting new releases.
+        </p>
+        <div class="cta-btns">
+          <a href="about.html" class="btn btn-primary">Our Vision</a>
+          <a href="contact.html" class="btn btn-outline">Get Updates</a>
         </div>
       </div>
+    </section>
 
-      <!-- Developer Tools (Coming Soon) -->
-      <div class="product-row product-row--reverse">
-        <div class="product-info" style="order:1;">
-          <span class="badge badge--blue" style="margin-bottom:1rem;display:inline-block;">In Development</span>
-          <h2>Developer Tools</h2>
-          <p class="product-tagline">AI-Powered Development Suite</p>
-          <p>Comprehensive development tools and SDKs to build, test, and deploy AI applications faster than ever before.</p>
-          <ul class="dot-list" style="margin-bottom:2rem;">
-            <li>AI-assisted coding</li>
-            <li>Automated testing</li>
-            <li>Performance optimization</li>
-            <li>Comprehensive SDKs</li>
-          </ul>
-          <div class="product-coming-soon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Coming Soon
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a href="index.html" class="footer__logo">Techfospect</a>
+          <p class="footer__tagline">
+            Building the future of AI-powered tech solutions
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="index.html">Home</a><a href="about.html">About</a
+            ><a href="products.html">Products</a
+            ><a href="services.html">Services</a
+            ><a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect With Us</h4>
+          <p class="footer__email">
+            <a href="mailto:techfospect@gmail.com">techfospect@gmail.com</a>
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://x.com/techfospect"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9 9 0 0 1-2.85 1.09A4.52 4.52 0 0 0 11.5 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                /></svg
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/techfospect/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" /></svg
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+            ></a>
           </div>
         </div>
-        <div class="product-visual" style="order:0;">
-          <!-- Replace with ./images/network-tech.jpg after running download-images.sh -->
-          <img
-            src="https://images.unsplash.com/photo-1681770678332-3a190df72091?w=1080&q=80"
-            alt="Network connection technology visualization"
-            onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Developer Tools Preview</div>'"
-          />
-          <div class="overlay"></div>
-        </div>
       </div>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section--alt">
-    <div class="container text-center" style="max-width:48rem;margin:0 auto;">
-      <h2>More Products Coming Soon</h2>
-      <p style="font-size:1.0625rem;margin:1rem 0 2rem;">We're constantly innovating and expanding our product ecosystem. Stay tuned for exciting new releases.</p>
-      <div class="cta-btns">
-        <a href="about.html"   class="btn btn-primary">Our Vision</a>
-        <a href="contact.html" class="btn btn-outline">Get Updates</a>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Techfospect. All rights reserved.</p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div><a href="index.html" class="footer__logo">Techfospect</a><p class="footer__tagline">Building the future of AI-powered tech solutions</p></div>
-      <div><h4 class="footer__heading">Quick Links</h4><nav class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav></div>
-      <div>
-        <h4 class="footer__heading">Connect With Us</h4>
-        <p class="footer__email"><a href="mailto:contact@techfospect.com">contact@techfospect.com</a></p>
-        <div class="footer-social">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9 9 0 0 1-2.85 1.09A4.52 4.52 0 0 0 11.5 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom"><p>&copy; <span id="year"></span> Techfospect. All rights reserved.</p></div>
-  </footer>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
